@@ -5,7 +5,7 @@ I worked on the Google Data Analytics Capstone Project and decided to choose the
 
 The file above contains the code for my Google Capstone Project which goes into depth of what I did, done in RStudio. 
 
-Here is the link to my Visualization that I did in a Tableau Dashboard [here](https://public.tableau.com/app/profile/brenden.lai/viz/CyclisticCapstoneViz/Dashboard1) 
+Here is the link to my Visualization that I did in a Tableau Dashboard [here](https://public.tableau.com/app/profile/brenden.lai/viz/CyclisticVisualization/CyclisticStory?publish=yes) 
 
 
 SCENARIO
@@ -84,7 +84,7 @@ means that you won’t be able to connect pass purchases to credit card numbers 
 -- SHARE
 
 Created visualizations in Tableau to further demonstrate my skills. Visualizations for this project included bar graphs, circle views, and a text table. The dashboard looked at the number of riders Cyclistic has, grouped by casuals and members, the most popular bike, the average ride length by day and month, and the average number of riders by day and month. I was aiming to convey a easy to understand story on how casual riders and annual members use the bikes differently whether it be the choice of bike, how much time they spent on the bike on a specific day and month, or what day and month they preferred to ride during.
-The visualization can be found on my public Tableau profile [here](https://public.tableau.com/app/profile/brenden.lai/viz/CyclisticCapstoneViz/Dashboard1).   
+The visualization can be found on my public Tableau profile [here](https://public.tableau.com/app/profile/brenden.lai/viz/CyclisticVisualization/CyclisticStory?publish=yes).   
 
 
 -- ACT
