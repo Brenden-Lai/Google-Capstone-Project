@@ -43,27 +43,28 @@ interested in analyzing the Cyclistic historical bike trip data to identify tren
 
 I needed to know how casual riders and annual members differ to answer our business task.
 
-Our business task: To convert our current casuals into members.
+Our business task: To convert our current casuals riders into annual members.
 
 -- PREPARE
 
-For this project, I was provided a bicycle dataset under Divvy that was made avaliable by Motivate International Inc. under this license [here](https://ride.divvybikes.com/data-license-agreement). Because this dataset was provided and collected by the company, it is a reliable source that is ready to use for cleaning and analyzing. 
+For this project, I was provided a bicycle dataset under Divvy that was made avaliable by Motivate International Inc. under this license [here](https://ride.divvybikes.com/data-license-agreement). Because this dataset was provided and collected by the company, it is a reliable and trustworthy source that is ready to use for cleaning and analyzing. But note that data-privacy issues prohibit you from using riders’ personally identifiable information. This
+means that you won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
 -- PROCESS
 
-1. To begin the cleaning process, I first had to choose which program to use. I decided to use R, as it was a programming language that could handle the sheer amount of data that was provided and because I wanted to showcase some of the R skills that I received from the Google Data Analytics program. 
+1. To begin the cleaning process, I first had to choose which program to use. I decided to use R, as it was a programming language that could handle the sheer amount of data that was provided, and because I wanted to showcase some of the R skills that I received from the Google Data Analytics program. 
 
 2. Next, I imported the dataset into RStudio Desktop using read.csv.
 
 3. I then checked the column names to make sure that they were all the same in order to merge them into one file.
 
-4. Merge into a single file.
+4. Merge the dataset into a single file.
 
-5. Inspected the merged file to ensure that there were no problems.
+5. Inspected the merged file using View, str, and other syntax to ensure that there were no problems.
 
 6. Removed columns that weren't necessary for analysis.
 
-7. Created new columns for date, month, day, and year of each ride
+7. Created new columns for date, month, day, and year of each rider.
 
 8. Created a ride_length column in minutes which took the difference between the ended_at column and the started_at column.
 
@@ -77,22 +78,24 @@ For this project, I was provided a bicycle dataset under Divvy that was made ava
 
 -- ANALYZE
 
-To summarize, I checked for the number of rows that I had to work with to clarify how many riders we had in total. With this knowledge, I grouped the members and casuals to see how many of each we currently had to see the number of casuals we want to convert. Next, I looked at the different bike choices that members and casuals preferred and found out that the most popular options were in order: classic bikes, electric bikes, then docked bikes. Docked bikes being the only option that was used only by casuals except for a singular member. I also wanted to know which day of the week and month was the most popular for our riders in order to offer recommendations to our stakeholders. I found out that casuals preferred riding during the weekends (Saturday and Sunday) while members preferred (Tuesday and Wednesday). As for the months, both casuals and members preferred the summertime (June - September) and didn't prefer the wintertime (December - March). Lastly, I compared the ride length between casuals and members by day and month. I found out that casuals spent significantly more minutes on average than members, both for each day of the week and the month. 
+  To summarize, I wanted to check for the number of rows in the dataset to clarify how many riders we had in total which ended up being 4,588,104. With this knowledge, I grouped the members and casuals to see how many of each we currently. I ended up finding out there were about 500,000 more riders who were members compared to casuals, or 2,539,802 members and 2,048,302 casuals. Next, I looked at the different bike choices that members and casuals preferred and found out that the most popular options were in order: classic bikes, electric bikes, then docked bikes. Docked bikes being the only option that was used only by casuals except for a singular member. I also wanted to know which day of the week and month was the most popular for our riders in order to offer recommendations to our stakeholders. I found out that casuals preferred riding during the weekends (Saturday and Sunday) while members preferred (Tuesday and Wednesday) which is probably due to the way that they use the bikes differently. The casual riders enjoy using the bikes for leisure whilst members would probably use the bike for riding to school/work in addition to leisure or lifestyle. As for the months, both casuals and members preferred the summertime (June - September) and didn't enjoy the wintertime (December - March) due to presumably the weather. Lastly, I compared the ride length between casuals and members by day of the week and month. I found out that casuals spent significantly more minutes on average than members, both for each day of the week and the month. Similar to their preferred day of week, casuals spent the most time on the bike during the weekends, but spent the most time in the month of February. Members also spent the most time on the weekends even though they preferred Tuesday and Wednesday and also spent the most time in the month of February.
+
 
 -- SHARE
 
-Created visualizations in Tableau to further demonstrate my skills. Visualizations for this project included bar graphs, circle views, and a text table. The visualization can be found on my public Tableau profile [here](https://public.tableau.com/app/profile/brenden.lai). 
+Created visualizations in Tableau to further demonstrate my skills. Visualizations for this project included bar graphs, circle views, and a text table. The dashboard looked at the number of riders Cyclistic has, grouped by casuals and members, the most popular bike, the average ride length by day and month, and the average number of riders by day and month. I was aiming to convey a easy to understand story on how casual riders and annual members use the bikes differently whether it be the choice of bike, how much time they spent on the bike on a specific day and month, or what day and month they preferred to ride during.
+The visualization can be found on my public Tableau profile [here](https://public.tableau.com/app/profile/brenden.lai/viz/CyclisticCapstoneViz/Dashboard1).   
 
 
 -- ACT
 
 Recommedations for stakeholders:
 
-1. Aim to target and promote the cyclistic membership during the summertime by offering discounts.
-2. Potential reward system exclusive to members that incentivizes users to use the bikes longer and more often.
-3. Pushing a lifestyle narrative during peak day of weeks and months.
+1. Aim to target and promote the cyclistic membership during the summertime by advertising the annual membership with a discount.
+2. Implement a potential reward system exclusive to members that incentivizes users to use the bikes longer and more often.
+3. Push a lifestyle narrative during peak day of the weeks and months (e.g. healthy living, brand name, convenience).
 
-Overall, receiving more feedback from casuals and members will help offer more insight into how we could potentially convert more casuals into members. For example, knowing why our current members decided to become members in the first place and why casuals aren't becoming members even though they enjoy the bikes even more than members.  
+Overall, receiving more feedback from casuals and members will help offer more insight into how we could potentially convert more casuals into members. For example, knowing why our current members decided to become members in the first place and why casuals aren't becoming members even though they spend more time on the bikes than members. 
 
 
 
